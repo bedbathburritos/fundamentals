@@ -26,12 +26,10 @@ students = [
         {'first_name' : 'Mark', 'last_name' : 'Guillen'},
         {'first_name' : 'KB', 'last_name' : 'Tonel'}
     ]
-def iterate_dictionary(some_list):
-    for some_dictionary in some_list:
-        name_str = ''
-    for curr_key in curr_dict.keys():
-        display_str += f"{curr_key} - {curr_dict[curr_key]}, "
-    print(display_str)
+def iterate_dictionary(lst):
+    for val in lst:
+        for k, v in val.items():
+            print(f"{curr_key} - {curr_dict[curr_key]}, ")
 
 iterate_dictionary(students)
 
