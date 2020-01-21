@@ -33,7 +33,7 @@ def iterate_dictionary(lst):
             my_Str += f"{k} - {v}"
         print(my_Str)
 
-iterate_dictionary(students)
+# iterate_dictionary(students)
 
 # Create a function iterateDictionary2(key_name, some_list) that, given a list of dictionaries and a key name, the function prints the value stored in that key for each dictionary. For example, iterateDictionary2('first_name', students) should output:
 
@@ -82,10 +82,10 @@ dojo = {
 # Minh
 # Devon
 
-def print_info(some_dict):
-    for key in some_dict.keys():
-        print(f"{len(some_dict[key])} {key.upper()}")
-    for item in some_dict[key]:
+def print_info(dojo):
+    for k, v in dojo():
+        print(f"{len(dojo[k])} - {k.upper()}")
+    for item in dojo[v]:
         print(item)
     # this prints a new line
     print('\n')
