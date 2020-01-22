@@ -26,14 +26,14 @@ students = [
         {'first_name' : 'Mark', 'last_name' : 'Guillen'},
         {'first_name' : 'KB', 'last_name' : 'Tonel'}
     ]
-def iterate_dictionary(some_list):
-    for some_dictionary in some_list:
-        name_str = ''
-    for curr_key in curr_dict.keys():
-        display_str += f"{curr_key} - {curr_dict[curr_key]}, "
-    print(display_str)
+def iterate_dictionary(lst):
+    for val in students:
+        my_Str = ""
+        for k, v in val.items():
+            my_Str += f"{k} - {v}"
+        print(my_Str)
 
-iterate_dictionary(students)
+# iterate_dictionary(students)
 
 # Create a function iterateDictionary2(key_name, some_list) that, given a list of dictionaries and a key name, the function prints the value stored in that key for each dictionary. For example, iterateDictionary2('first_name', students) should output:
 
@@ -48,9 +48,9 @@ iterate_dictionary(students)
 # Guillen
 # Tonel
 
-def iterate_dictionary2(key, some_list):
-    for curr_dict in some_list:
-        print(curr_dict[key])
+def iterate_dictionary2(key, lst):
+    for val in lst:
+        print(val[key])
 
 iterate_dictionary2('first_name', students)
 iterate_dictionary2('last_name', students)
@@ -82,10 +82,10 @@ dojo = {
 # Minh
 # Devon
 
-def print_info(some_dict):
-    for key in some_dict.keys():
-        print(f"{len(some_dict[key])} {key.upper()}")
-    for item in some_dict[key]:
+def print_info(dojo):
+    for k, v in dojo():
+        print(f"{len(dojo[k])} - {k.upper()}")
+    for item in dojo[v]:
         print(item)
     # this prints a new line
     print('\n')
